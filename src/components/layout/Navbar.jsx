@@ -21,11 +21,11 @@ function Navbar() {
   ]
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-[#050816]/80 backdrop-blur-xl">
+    <header className="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-[#050816]/85 backdrop-blur-2xl">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-        <div className="flex items-center justify-between h-20 md:h-24">
+        <div className="flex items-center justify-between h-[88px] md:h-24">
 
           {/* LOGO */}
 
@@ -39,16 +39,16 @@ function Navbar() {
               <img
                 src={logo}
                 alt="Costa Automation"
-                className="h-12 sm:h-14 md:h-20 w-auto object-contain group-hover:scale-105 transition duration-300"
+                className="h-20 sm:h-20 md:h-24 w-auto object-contain group-hover:scale-105 transition duration-300"
               />
 
-              <div className="absolute inset-0 bg-cyan-400/20 blur-2xl opacity-60 -z-10" />
+              <div className="absolute inset-0 bg-cyan-400/20 blur-2xl opacity-70 -z-10" />
 
             </div>
 
             <div className="hidden sm:block min-w-0">
 
-              <h1 className="text-xl md:text-3xl font-black tracking-tight leading-none truncate">
+              <h1 className="text-2xl md:text-3xl font-black tracking-tight leading-none truncate">
 
                 Costa
                 <span className="text-cyan-400">
@@ -57,7 +57,7 @@ function Navbar() {
 
               </h1>
 
-              <p className="text-[9px] md:text-xs text-slate-500 mt-1 tracking-[0.28em] uppercase">
+              <p className="text-[10px] md:text-xs text-slate-500 mt-1 tracking-[0.30em] uppercase">
 
                 Sistemas Inteligentes
 
@@ -91,7 +91,7 @@ function Navbar() {
               href={createWhatsAppLink(messages.default)}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-cyan-500 hover:bg-cyan-400 hover:shadow-[0_0_20px_rgba(34,211,238,0.35)] transition-all duration-300 px-6 py-3 rounded-xl font-semibold text-black"
+              className="bg-cyan-500 hover:bg-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.35)] transition-all duration-300 px-6 py-3 rounded-xl font-semibold text-black"
             >
               WhatsApp
             </a>
@@ -101,14 +101,14 @@ function Navbar() {
           {/* MOBILE BUTTON */}
 
           <button
-            className="md:hidden flex items-center justify-center w-11 h-11 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md"
+            className="md:hidden flex items-center justify-center w-12 h-12 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md transition-all duration-300 hover:border-cyan-400/30"
             onClick={() => setIsOpen(!isOpen)}
           >
 
             {
               isOpen
-                ? <X size={24} />
-                : <Menu size={24} />
+                ? <X size={25} />
+                : <Menu size={25} />
             }
 
           </button>
@@ -123,13 +123,13 @@ function Navbar() {
         isOpen && (
           <div className="md:hidden border-t border-white/10 bg-[#050816]/95 backdrop-blur-2xl">
 
-            <div className="flex flex-col px-5 py-6 gap-4">
+            <div className="flex flex-col px-5 py-6 gap-3">
 
               {navItems.map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="text-slate-300 hover:text-cyan-400 transition py-2 text-lg"
+                  className="text-slate-300 hover:text-cyan-400 transition py-3 text-lg border-b border-white/5"
                   onClick={() => setIsOpen(false)}
                 >
                   {item}
@@ -140,7 +140,7 @@ function Navbar() {
                 href={createWhatsAppLink(messages.default)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 bg-cyan-500 hover:bg-cyan-400 transition-all duration-300 text-black rounded-2xl py-3.5 font-semibold text-center shadow-lg shadow-cyan-500/20"
+                className="mt-4 bg-cyan-500 hover:bg-cyan-400 transition-all duration-300 text-black rounded-2xl py-4 font-semibold text-center shadow-lg shadow-cyan-500/20 text-base"
               >
                 WhatsApp
               </a>
