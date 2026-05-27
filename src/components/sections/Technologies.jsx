@@ -140,7 +140,7 @@ function Technologies() {
 
         {/* GRID */}
 
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 mt-20">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mt-20">
 
           {
             technologies.map((tech, index) => {
@@ -157,7 +157,7 @@ function Technologies() {
                     delay: index * 0.05
                   }}
                   viewport={{ once: true }}
-                  className="group relative border border-white/10 bg-white/5 backdrop-blur-xl rounded-3xl p-6 overflow-hidden hover:border-cyan-400/40 hover:bg-cyan-400/5 transition-all duration-500"
+                  className="group relative border border-white/10 bg-white/5 backdrop-blur-xl rounded-3xl p-8 overflow-hidden hover:border-cyan-400/40 hover:bg-cyan-400/5 transition-all duration-500 min-h-[260px]"
                 >
 
                   {/* GLOW */}
@@ -166,10 +166,10 @@ function Technologies() {
 
                   {/* ICON */}
 
-                  <div className="relative z-10 bg-cyan-500/10 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition duration-500">
+                  <div className="relative z-10 bg-cyan-500/10 w-20 h-20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition duration-500">
 
                     <Icon
-                      size={30}
+                      size={34}
                       className="text-cyan-400"
                     />
 
@@ -179,11 +179,11 @@ function Technologies() {
 
                   <div className="relative z-10">
 
-                    <span className="inline-block mt-6 text-xs text-cyan-300 border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 rounded-full">
+                    <span className="inline-block mt-6 text-sm text-cyan-300 border border-cyan-400/20 bg-cyan-400/10 px-4 py-1.5 rounded-full">
                       {tech.category}
                     </span>
 
-                    <h3 className="mt-5 text-xl font-bold leading-snug">
+                    <h3 className="mt-6 text-2xl font-bold leading-snug">
                       {tech.title}
                     </h3>
 
