@@ -17,30 +17,28 @@ function Hero() {
   const floatingCards = [
     {
       icon: ShieldCheck,
-      title: "CFTV Inteligente",
+      title: "Automação Industrial",
       position: "top-28 left-6"
     },
     {
       icon: Network,
-      title: "Redes Estruturadas",
+      title: "Painéis Elétricos",
       position: "bottom-28 left-8"
     },
     {
       icon: Cpu,
-      title: "Automação",
+      title: "Controle de Processos",
       position: "top-36 right-6"
     },
     {
       icon: Zap,
-      title: "Elétrica Industrial",
+      title: "IHM & Supervisão",
       position: "bottom-28 right-8"
     },
   ]
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 pt-24 md:pt-28 pb-16 md:pb-20">
-
-      {/* BACKGROUND GLOW */}
 
       <div className="absolute inset-0">
 
@@ -49,8 +47,6 @@ function Hero() {
         <div className="absolute bottom-0 right-0 w-[260px] md:w-[450px] h-[260px] md:h-[450px] bg-blue-600/10 blur-[120px] md:blur-[160px]" />
 
       </div>
-
-      {/* FLOATING CARDS */}
 
       {
         floatingCards.map((card, index) => {
@@ -87,8 +83,6 @@ function Hero() {
         })
       }
 
-      {/* MAIN CONTENT */}
-
       <div className="relative z-10 w-full max-w-5xl mx-auto text-center">
 
         <motion.div
@@ -99,7 +93,7 @@ function Hero() {
 
           <span className="border border-cyan-400/30 bg-cyan-400/10 text-cyan-300 px-4 py-2 rounded-full text-[11px] sm:text-sm tracking-[0.2em] uppercase">
 
-            Costa Sistemas Inteligentes
+            Automação Industrial e Engenharia Aplicada
 
           </span>
 
@@ -115,13 +109,13 @@ function Hero() {
           className="mt-6 md:mt-8 text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-black leading-[1.05]"
         >
 
-          Automação Inteligente,
+          Automação Industrial,
 
           <span className="text-cyan-400">
-            {" "}Infraestrutura{" "}
+            {" "}Painéis Elétricos{" "}
           </span>
 
-          e Sistemas Profissionais
+          e Controle de Processos
 
         </motion.h1>
 
@@ -135,15 +129,12 @@ function Hero() {
           className="mt-5 md:mt-6 text-slate-400 text-sm sm:text-base md:text-xl max-w-3xl mx-auto leading-relaxed px-2"
         >
 
-          Soluções modernas em CFTV,
-          redes estruturadas,
-          elétrica industrial,
-          automação inteligente
-          e desenvolvimento de sistemas profissionais.
+          Desenvolvemos soluções em automação industrial,
+          montagem de painéis elétricos, integração de sistemas,
+          IHMs e controle de processos para aumentar a eficiência,
+          segurança e confiabilidade operacional.
 
         </motion.p>
-
-        {/* BUTTONS */}
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -172,8 +163,6 @@ function Hero() {
           </a>
 
         </motion.div>
-
-        {/* STATS */}
 
         <motion.div
           initial={{ opacity: 0 }}

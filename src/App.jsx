@@ -5,6 +5,7 @@ import Services from "./components/sections/Services"
 import WhyChoose from "./components/sections/WhyChoose"
 import Technologies from "./components/sections/Technologies"
 import Projects from "./components/sections/Projects"
+import TesteYoutube from "./components/sections/TesteYoutube"
 import Contact from "./components/sections/Contact"
 import CTA from "./components/sections/CTA"
 import Footer from "./components/sections/Footer"
@@ -26,9 +27,11 @@ function App() {
 
       <Projects />
 
-<FAQ />
+      <TesteYoutube />
 
-<Contact />
+      <FAQ />
+
+      <Contact />
 
       <CTA />
 

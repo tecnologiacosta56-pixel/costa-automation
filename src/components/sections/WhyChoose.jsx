@@ -15,44 +15,44 @@ function WhyChoose() {
 
     {
       icon: ShieldCheck,
-      title: "Confiabilidade Profissional",
+      title: "Confiabilidade Operacional",
       description:
-        "Projetos executados com estabilidade, segurança e padrão técnico profissional para ambientes residenciais e corporativos."
+        "Projetos desenvolvidos com foco em segurança, estabilidade e continuidade operacional para processos industriais e sistemas críticos."
     },
 
     {
       icon: Cpu,
-      title: "Integração Inteligente",
+      title: "Integração de Sistemas",
       description:
-        "Soluções modernas integrando automação, redes, segurança eletrônica e infraestrutura tecnológica."
+        "Integração entre CLPs, IHMs, painéis elétricos e dispositivos de campo para maior eficiência e controle dos processos."
     },
 
     {
       icon: Headphones,
       title: "Suporte Técnico Especializado",
       description:
-        "Atendimento técnico humanizado com suporte rápido, acompanhamento e assistência especializada."
+        "Acompanhamento técnico próximo, suporte qualificado e atendimento focado na solução rápida de demandas operacionais."
     },
 
     {
       icon: Sparkles,
-      title: "Acabamento Premium",
+      title: "Qualidade na Execução",
       description:
-        "Organização, estética e atenção aos detalhes em cada instalação realizada pela Costa Automation."
+        "Organização, acabamento e atenção aos detalhes em cada etapa da montagem, instalação e entrega dos projetos."
     },
 
     {
       icon: Workflow,
-      title: "Soluções Personalizadas",
+      title: "Projetos Personalizados",
       description:
-        "Cada projeto é desenvolvido de forma estratégica conforme a necessidade do cliente e do ambiente."
+        "Cada solução é desenvolvida de acordo com as necessidades específicas do cliente, garantindo melhor desempenho e resultado."
     },
 
     {
       icon: Wrench,
-      title: "Execução Profissional",
+      title: "Experiência em Campo",
       description:
-        "Instalação, configuração, testes e validaação realizados com foco em desempenho e confiabilidade."
+        "Conhecimento prático em instalação, testes, parametrização e comissionamento de sistemas industriais e elétricos."
     }
   ]
 
@@ -89,16 +89,16 @@ function WhyChoose() {
           </span>
 
           <h2 className="mt-8 text-4xl md:text-6xl font-black leading-tight">
-            Tecnologia com
+            Engenharia com
             <span className="text-cyan-400">
-              {" "}Padrão Profissional
+              {" "}Experiência e Confiabilidade
             </span>
           </h2>
 
           <p className="mt-6 text-slate-400 text-lg max-w-3xl mx-auto leading-relaxed">
-            Atuamos com soluções inteligentes em automação, segurança,
-            redes, infraestrutura e tecnologia, entregando projetos
-            modernos com foco em desempenho, estabilidade e experiência premium.
+            Desenvolvemos soluções em automação industrial, painéis elétricos,
+            controle de processos e integração tecnológica, entregando projetos
+            com qualidade, segurança e foco em resultados reais.
           </p>
 
         </motion.div>

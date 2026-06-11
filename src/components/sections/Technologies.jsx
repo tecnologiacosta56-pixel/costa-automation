@@ -1,93 +1,51 @@
 import { motion } from "framer-motion"
 
 import {
-  MonitorSmartphone,
-  Database,
-  Cloud,
-  ShieldCheck,
   Cpu,
+  MonitorSmartphone,
+  Zap,
   Network,
-  Server,
-  Cable,
-  Bot,
-  Workflow,
-  Layers3,
-  BrainCircuit
+  ShieldCheck,
+  Workflow
 } from "lucide-react"
 
 function Technologies() {
 
   const technologies = [
     {
-      icon: MonitorSmartphone,
-      title: "React",
-      category: "Frontend"
-    },
-
-    {
-      icon: Database,
-      title: "Firebase",
-      category: "Backend"
-    },
-
-    {
-      icon: Cloud,
-      title: "Cloud",
-      category: "Infraestrutura"
-    },
-
-    {
-      icon: ShieldCheck,
-      title: "Cyber Security",
-      category: "Segurança"
-    },
-
-    {
       icon: Cpu,
-      title: "Automação",
-      category: "Sistemas"
+      title: "Automação Industrial",
+      category: "CLPs e Controle"
+    },
+
+    {
+      icon: Zap,
+      title: "Painéis Elétricos",
+      category: "Comandos e Proteção"
+    },
+
+    {
+      icon: MonitorSmartphone,
+      title: "IHM e Supervisão",
+      category: "Operação e Monitoramento"
     },
 
     {
       icon: Network,
-      title: "Redes",
-      category: "Infraestrutura"
+      title: "Redes e Infraestrutura",
+      category: "Comunicação e Conectividade"
     },
 
     {
-      icon: Server,
-      title: "Servidores",
-      category: "Datacenter"
-    },
-
-    {
-      icon: Cable,
-      title: "Cabeamento",
-      category: "Estruturado"
-    },
-
-    {
-      icon: Bot,
-      title: "IA",
-      category: "Inteligência"
+      icon: ShieldCheck,
+      title: "Segurança Eletrônica",
+      category: "CFTV e Controle de Acesso"
     },
 
     {
       icon: Workflow,
-      title: "Integrações",
-      category: "Automação"
-    },
-
-    {
-      icon: Layers3,
-      title: "SaaS",
-      category: "Escalável"
-    },
-
-    {
-      icon: BrainCircuit,
-      title: "Sistemas Inteligentes",
-      category: "Enterprise"
+      title: "Integração de Sistemas",
+      category: "Soluções Inteligentes"
     }
   ]
 
@@ -120,20 +78,20 @@ function Technologies() {
         >
 
           <span className="border border-cyan-400/30 bg-cyan-400/10 text-cyan-300 px-5 py-2 rounded-full text-sm">
-            Tecnologias & Infraestrutura
+            Tecnologias e Soluções Aplicadas
           </span>
 
           <h2 className="mt-8 text-4xl md:text-6xl font-black leading-tight">
-            Ecossistema
+            Tecnologias para
             <span className="text-cyan-400">
-              {" "}Tecnológico
+              {" "}Projetos Reais
             </span>
           </h2>
 
           <p className="mt-6 text-slate-400 text-lg max-w-3xl mx-auto leading-relaxed">
-            Utilizamos tecnologias modernas, infraestrutura inteligente
-            e soluções escaláveis para construir ambientes tecnológicos
-            preparados para o futuro.
+            Atuamos com automação industrial, painéis elétricos,
+            redes, segurança eletrônica e integração de sistemas,
+            utilizando tecnologias adequadas para cada projeto e necessidade.
           </p>
 
         </motion.div>
