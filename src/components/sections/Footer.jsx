@@ -64,11 +64,9 @@ function Footer() {
 
             <p className="mt-6 text-slate-400 leading-relaxed">
 
-              Soluções modernas em automação,
-              infraestrutura tecnológica,
-              segurança eletrônica,
-              elétrica profissional
-              e sistemas inteligentes.
+              Soluções inteligentes em automação industrial,
+              painéis elétricos, supervisão, redes estruturadas
+              e integração tecnológica para empresas e residências.
 
             </p>
 
@@ -100,7 +98,7 @@ function Footer() {
 
           </div>
 
-          {/* TECHNOLOGIES */}
+          {/* ESPECIALIDADES */}
 
           <div>
 
@@ -110,15 +108,17 @@ function Footer() {
 
             <div className="flex flex-col gap-4 text-slate-400">
 
-              <span>CFTV Inteligente</span>
+              <span>Automação Industrial</span>
 
-              <span>Automação</span>
+              <span>Painéis Elétricos</span>
+
+              <span>IHM e Supervisão</span>
 
               <span>Redes Estruturadas</span>
 
-              <span>Infraestrutura</span>
+              <span>Automação Residencial</span>
 
-              <span>Sistemas SaaS</span>
+              <span>Integração de Sistemas</span>
 
             </div>
 
@@ -141,7 +141,7 @@ function Footer() {
                   className="text-cyan-400"
                 />
 
-                <span>(75) 99999-9999</span>
+                <span>(75) 98358-5959</span>
 
               </div>
 
@@ -152,7 +152,7 @@ function Footer() {
                   className="text-cyan-400"
                 />
 
-                <span>contato@costaautomation.com</span>
+                <span>contatocostaautomation@gmail.com</span>
 
               </div>
 
@@ -163,7 +163,7 @@ function Footer() {
                   className="text-cyan-400"
                 />
 
-                <span>Bahia • Brasil</span>
+                <span>Alagoinhas • BA</span>
 
               </div>
 
@@ -173,11 +173,14 @@ function Footer() {
 
             <div className="flex items-center gap-4 mt-8">
 
-              <button className="border border-white/10 hover:border-cyan-400/40 hover:bg-cyan-400/10 transition-all duration-300 px-4 py-3 rounded-xl text-cyan-400 font-semibold text-sm">
-
+              <a
+                href="https://instagram.com/costaautomation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-white/10 hover:border-cyan-400/40 hover:bg-cyan-400/10 transition-all duration-300 px-4 py-3 rounded-xl text-cyan-400 font-semibold text-sm"
+              >
                 Instagram
-
-              </button>
+              </a>
 
             </div>
 
@@ -198,9 +201,9 @@ function Footer() {
 
           <p className="text-slate-600 text-sm text-center md:text-right">
 
-            Desenvolvido com tecnologia,
-            automação inteligente
-            e arquitetura moderna.
+            Especialistas em automação,
+            integração de sistemas
+            e soluções inteligentes.
 
           </p>
 

@@ -1,9 +1,12 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
-import sistemaIhm from "../../assets/images/sistema-ihm.jpg"
-import painelIndustrial from "../../assets/images/painel-industrial.jpg"
-import classificacao from "../../assets/images/classificacao-cor-tamanho.jpg"
+import automacaoIndustrial from "../../assets/images/automacao-industrial.jpg"
+import paineisEletricos from "../../assets/images/paineis-eletricos.jpg"
+import ihmSupervisao from "../../assets/images/ihm-supervisao.jpg"
+import redesEstruturadas from "../../assets/images/redes-estruturadas.jpg"
+import automacaoResidencial from "../../assets/images/automacao-residencial.jpg"
+import integracaoSistemas from "../../assets/images/integracao-sistemas.jpg"
 
 function Projects() {
 
@@ -11,28 +14,57 @@ function Projects() {
 
   const projects = [
     {
-      image: sistemaIhm,
-      video: "https://www.youtube.com/embed/UDPZ-bViUqU",
+      image: automacaoIndustrial,
+      video: "https://www.youtube.com/embed/Oo8HmRN9Hds",
       category: "Automação Industrial",
-      title: "Sistema Automatizado com IHM",
+      title: "Automação Industrial",
       description:
-        "Sistema industrial com interface homem-máquina, supervisão operacional e controle de processos em tempo real."
+        "Projetos de automação industrial com CLPs, sensores, acionamentos e controle de processos para aumento de produtividade e confiabilidade operacional."
     },
+
     {
-      image: painelIndustrial,
-      video: "https://www.youtube.com/embed/UDPZ-bViUqU",
-      category: "Painel Elétrico Industrial",
-      title: "Montagem e Organização de Painel",
+      image: paineisEletricos,
+      video: "https://www.youtube.com/embed/Z5X6Tb-5hNo",
+      category: "Painéis Elétricos",
+      title: "Painéis Elétricos",
       description:
-        "Montagem profissional de painel elétrico industrial com organização interna, identificação de componentes e foco em confiabilidade operacional."
+        "Montagem e adequação de painéis elétricos industriais com foco em organização, segurança, identificação e desempenho operacional."
     },
+
     {
-      image: classificacao,
+      image: ihmSupervisao,
       video: "https://www.youtube.com/embed/UDPZ-bViUqU",
-      category: "Classificação Automática",
-      title: "Classificação por Cor e Tamanho",
+      category: "IHM e Supervisão",
+      title: "IHM e Supervisão",
       description:
-        "Sistema automatizado com sensores, esteira transportadora e atuadores pneumáticos para separação automática de peças."
+        "Interfaces homem-máquina e sistemas supervisórios desenvolvidos para monitoramento, operação e controle em tempo real."
+    },
+
+    {
+      image: redesEstruturadas,
+      video: "https://www.youtube.com/embed/2GnCFdugUtk",
+      category: "Redes Estruturadas",
+      title: "Redes Estruturadas",
+      description:
+        "Infraestrutura de rede para ambientes industriais, comerciais e corporativos garantindo conectividade e comunicação eficiente."
+    },
+
+    {
+      image: automacaoResidencial,
+      video: "https://www.youtube.com/embed/Eg-_3B_n8Xs",
+      category: "Automação Residencial",
+      title: "Automação Residencial",
+      description:
+        "Soluções inteligentes para residências com controle de iluminação, segurança, monitoramento e automação integrada."
+    },
+
+    {
+      image: integracaoSistemas,
+      video: "https://www.youtube.com/embed/3FhWi311ZuA",
+      category: "Integração de Sistemas",
+      title: "Integração de Sistemas",
+      description:
+        "Integração de equipamentos, softwares e processos para criar soluções completas e inteligentes para cada necessidade."
     }
   ]
 
@@ -42,7 +74,6 @@ function Projects() {
 
         <div className="max-w-7xl mx-auto">
 
-          {/* HEADER */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -56,15 +87,14 @@ function Projects() {
 
             <h2 className="mt-8 text-4xl md:text-6xl font-black">
               Portfólio
-              <span className="text-cyan-400"> Costa Automação</span>
+              <span className="text-cyan-400"> Costa Automation</span>
             </h2>
 
             <p className="mt-6 text-slate-400 text-lg max-w-3xl mx-auto leading-relaxed">
-              Conheça alguns dos projetos desenvolvidos pela Costa Automação em automação industrial, controle de processos e montagem de painéis elétricos.
+              Conheça alguns dos projetos desenvolvidos pela Costa Automation em automação industrial, painéis elétricos, supervisão, redes estruturadas e integração de sistemas.
             </p>
           </motion.div>
 
-          {/* GRID */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
 
             {projects.map((project, index) => (
@@ -81,7 +111,6 @@ function Projects() {
                 className="group cursor-pointer relative rounded-3xl overflow-hidden border border-white/10 bg-[#0B1120] hover:border-cyan-400/40 transition-all duration-500 shadow-lg hover:shadow-[0_0_45px_rgba(34,211,238,0.18)]"
               >
 
-                {/* IMAGE */}
                 <div className="relative h-[300px] overflow-hidden">
 
                   <img
@@ -90,22 +119,18 @@ function Projects() {
                     className="w-full h-full object-cover group-hover:scale-110 transition duration-700 group-hover:brightness-110"
                   />
 
-                  {/* CINEMATIC OVERLAY */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
 
-                  {/* LIGHT SWEEP EFFECT */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition">
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/10 to-transparent animate-pulse" />
                   </div>
 
-                  {/* CATEGORY */}
                   <div className="absolute top-4 left-4">
                     <span className="bg-black/60 border border-cyan-400/20 text-cyan-300 text-xs px-3 py-1 rounded-full backdrop-blur-md">
                       {project.category}
                     </span>
                   </div>
 
-                  {/* PLAY BUTTON PREMIUM */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <motion.div
                       animate={{ scale: [1, 1.08, 1] }}
@@ -118,7 +143,6 @@ function Projects() {
 
                 </div>
 
-                {/* CONTENT */}
                 <div className="p-8">
 
                   <h3 className="text-2xl font-bold group-hover:text-cyan-300 transition">
@@ -130,7 +154,7 @@ function Projects() {
                   </p>
 
                   <p className="mt-6 text-cyan-400 text-sm font-semibold opacity-80 group-hover:opacity-100 transition">
-                    Abrir demonstração →
+                    Assistir demonstração →
                   </p>
 
                 </div>
@@ -145,7 +169,6 @@ function Projects() {
 
       </section>
 
-      {/* MODAL */}
       <AnimatePresence>
 
         {selectedVideo && (

@@ -149,8 +149,9 @@ function Contact() {
           <p className="text-slate-400 max-w-3xl mx-auto mt-6 text-lg leading-relaxed">
 
             Entre em contato para desenvolver projetos modernos
-            de automação, infraestrutura tecnológica,
-            redes, CFTV inteligente e soluções SaaS.
+de automação industrial, painéis elétricos,
+IHM, supervisão, redes estruturadas,
+automação residencial e integração de sistemas.
 
           </p>
 
@@ -233,7 +234,7 @@ function Contact() {
                   </h4>
 
                   <p className="text-slate-400 text-lg break-all">
-                    contato@costaautomation.com
+                    contatocostaautomation@gmail.com
                   </p>
 
                 </div>
@@ -260,7 +261,7 @@ function Contact() {
                   </h4>
 
                   <p className="text-slate-400 text-lg">
-                    Bahia • Brasil
+                    Alagoinhas • BA
                   </p>
 
                 </div>

@@ -28,9 +28,9 @@ function App() {
 
       <FAQ />
 
-      <Contact />
-
       <CTA />
+
+      <Contact />
 
       <Footer />
 

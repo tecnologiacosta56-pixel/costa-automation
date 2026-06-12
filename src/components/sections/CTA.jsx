@@ -18,15 +18,15 @@ function CTA() {
   const features = [
     {
       icon: ShieldCheck,
-      title: "Infraestrutura Profissional"
+      title: "Automação Industrial"
     },
     {
       icon: Cpu,
-      title: "Automação Inteligente"
+      title: "Painéis e Supervisão"
     },
     {
       icon: Zap,
-      title: "Soluções Escaláveis"
+      title: "Integração de Sistemas"
     }
   ]
 
@@ -78,11 +78,10 @@ function CTA() {
 
             <p className="mt-8 text-slate-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
 
-              Projetos modernos em automação,
-              redes estruturadas,
-              segurança eletrônica,
-              elétrica profissional
-              e sistemas tecnológicos escaláveis.
+              Projetos profissionais em automação industrial,
+painéis elétricos, CLPs, IHMs,
+redes estruturadas e integração
+de sistemas inteligentes.
 
             </p>
 

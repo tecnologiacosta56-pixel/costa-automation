@@ -27,7 +27,7 @@ function Hero() {
     },
     {
       icon: Cpu,
-      title: "Controle de Processos",
+      title: "Integração de Sistemas",
       position: "top-36 right-6"
     },
     {
@@ -93,7 +93,7 @@ function Hero() {
 
           <span className="border border-cyan-400/30 bg-cyan-400/10 text-cyan-300 px-4 py-2 rounded-full text-[11px] sm:text-sm tracking-[0.2em] uppercase">
 
-            Automação Industrial e Engenharia Aplicada
+            Automação Industrial • Painéis Elétricos • Integração de Sistemas
 
           </span>
 
@@ -115,7 +115,7 @@ function Hero() {
             {" "}Painéis Elétricos{" "}
           </span>
 
-          e Controle de Processos
+          e Integração de Sistemas
 
         </motion.h1>
 
@@ -129,10 +129,10 @@ function Hero() {
           className="mt-5 md:mt-6 text-slate-400 text-sm sm:text-base md:text-xl max-w-3xl mx-auto leading-relaxed px-2"
         >
 
-          Desenvolvemos soluções em automação industrial,
-          montagem de painéis elétricos, integração de sistemas,
-          IHMs e controle de processos para aumentar a eficiência,
-          segurança e confiabilidade operacional.
+          Desenvolvemos soluções completas em automação industrial,
+          painéis elétricos, IHM, supervisão, redes estruturadas,
+          automação residencial e integração de sistemas para aumentar
+          a produtividade, segurança e eficiência operacional.
 
         </motion.p>
 
@@ -201,11 +201,11 @@ function Hero() {
           <div>
 
             <h3 className="text-2xl md:text-4xl font-black text-cyan-400">
-              IA
+              CLPs
             </h3>
 
             <p className="text-slate-400 mt-2 text-xs sm:text-sm md:text-base">
-              Integrações
+              Programação
             </p>
 
           </div>
@@ -213,11 +213,11 @@ function Hero() {
           <div>
 
             <h3 className="text-2xl md:text-4xl font-black text-cyan-400">
-              SaaS
+              IHM
             </h3>
 
             <p className="text-slate-400 mt-2 text-xs sm:text-sm md:text-base">
-              Escalável
+              Supervisão
             </p>
 
           </div>

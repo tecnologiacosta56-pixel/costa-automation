@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { Link } from "react-scroll"
 
 import {
   Cpu,
@@ -32,14 +33,14 @@ function Technologies() {
 
     {
       icon: Network,
-      title: "Redes e Infraestrutura",
+      title: "Redes Estruturadas",
       category: "Comunicação e Conectividade"
     },
 
     {
       icon: ShieldCheck,
-      title: "Segurança Eletrônica",
-      category: "CFTV e Controle de Acesso"
+      title: "Automação Residencial",
+      category: "Casas Inteligentes"
     },
 
     {
@@ -82,15 +83,16 @@ function Technologies() {
           </span>
 
           <h2 className="mt-8 text-4xl md:text-6xl font-black leading-tight">
-            Tecnologias para
+            Tecnologias e
             <span className="text-cyan-400">
-              {" "}Projetos Reais
+              {" "}Soluções Aplicadas
             </span>
           </h2>
 
           <p className="mt-6 text-slate-400 text-lg max-w-3xl mx-auto leading-relaxed">
             Atuamos com automação industrial, painéis elétricos,
-            redes, segurança eletrônica e integração de sistemas,
+            redes estruturadas, automação residencial,
+            IHM e supervisão, além da integração de sistemas,
             utilizando tecnologias adequadas para cada projeto e necessidade.
           </p>
 
@@ -106,48 +108,59 @@ function Technologies() {
               const Icon = tech.icon
 
               return (
-                <motion.div
+
+                <Link
                   key={index}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: index * 0.05
-                  }}
-                  viewport={{ once: true }}
-                  className="group relative border border-white/10 bg-white/5 backdrop-blur-xl rounded-3xl p-8 overflow-hidden hover:border-cyan-400/40 hover:bg-cyan-400/5 transition-all duration-500 min-h-[260px]"
+                  to="projetos"
+                  smooth={true}
+                  duration={800}
+                  offset={-80}
                 >
 
-                  {/* GLOW */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 0.5,
+                      delay: index * 0.05
+                    }}
+                    viewport={{ once: true }}
+                    className="group cursor-pointer relative border border-white/10 bg-white/5 backdrop-blur-xl rounded-3xl p-8 overflow-hidden hover:border-cyan-400/40 hover:bg-cyan-400/5 transition-all duration-500 min-h-[260px]"
+                  >
 
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-cyan-400/5 blur-2xl" />
+                    {/* GLOW */}
 
-                  {/* ICON */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-cyan-400/5 blur-2xl" />
 
-                  <div className="relative z-10 bg-cyan-500/10 w-20 h-20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition duration-500">
+                    {/* ICON */}
 
-                    <Icon
-                      size={34}
-                      className="text-cyan-400"
-                    />
+                    <div className="relative z-10 bg-cyan-500/10 w-20 h-20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition duration-500">
 
-                  </div>
+                      <Icon
+                        size={34}
+                        className="text-cyan-400"
+                      />
 
-                  {/* CONTENT */}
+                    </div>
 
-                  <div className="relative z-10">
+                    {/* CONTENT */}
 
-                    <span className="inline-block mt-6 text-sm text-cyan-300 border border-cyan-400/20 bg-cyan-400/10 px-4 py-1.5 rounded-full">
-                      {tech.category}
-                    </span>
+                    <div className="relative z-10">
 
-                    <h3 className="mt-6 text-2xl font-bold leading-snug">
-                      {tech.title}
-                    </h3>
+                      <span className="inline-block mt-6 text-sm text-cyan-300 border border-cyan-400/20 bg-cyan-400/10 px-4 py-1.5 rounded-full">
+                        {tech.category}
+                      </span>
 
-                  </div>
+                      <h3 className="mt-6 text-2xl font-bold leading-snug">
+                        {tech.title}
+                      </h3>
 
-                </motion.div>
+                    </div>
+
+                  </motion.div>
+
+                </Link>
+
               )
             })
           }
